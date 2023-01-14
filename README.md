@@ -54,7 +54,7 @@ Access http://127.0.0.1:7070/ to use webui, or you can use the [original search 
 
 ```bash
 mkdir book-searcher && cd book-searcher
-wget https://raw.githubusercontent.com/book-searcher-org/book-searcher/master/docker-compose.yml
+wget https://raw.githubusercontent.com/rdshoep/book-searcher/master/docker-compose.yml
 # Prepare the index: put csv files in the directory, and run the following command to create index
 docker-compose run --rm -v "$PWD:$PWD" -w "$PWD" book-searcher /book-searcher index -f *.csv
 # start book-searcher
