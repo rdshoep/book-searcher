@@ -15,7 +15,7 @@ export default async function getIpfsGateways() {
   } else {
     const ipfsGateways: string[] = JSON.parse(localStorage.getItem('ipfs_gateways') || '[]');
     return Array.from(
-        new Set(ipfsGateways.concat(["https://cloudflare-ipfs.com/","https://dweb.link/","https://ipfs.io/","https://gateway.pinata.cloud/"]))
+        new Set(ipfsGateways.concat(['https://gateway.pinata.cloud/', 'https://cloudflare-ipfs.com/', 'https://dweb.link/', 'https://ipfs.io/']))
     );
   }
 }
